@@ -22,7 +22,7 @@ Setup GITHub and Docker account
 1. **Open Terminal** (Linux/Mac) or **PowerShell** (Windows).
 2. Pull the Python 3.8 image:
    ```sh
-   docker pull python:3.8-slim
+   docker pull python:3.8-
    ```
 3. Verify the downloaded image:
    ```sh
@@ -30,11 +30,11 @@ Setup GITHub and Docker account
    ```
 4. Run a Python script inside a Docker container:
    ```sh
-   docker run -v "$(pwd):/src" -w /src python:3.8-slim python script.py
+   docker run -v "$(pwd):/src" -w /src python:3.8- python script.py
    ```
    - `-v "$(pwd):/src"` → Mounts current directory to `/src` inside the container.
    - `-w /src` → Sets the working directory inside the container.
-   - `python:3.8-slim` → Uses the lightweight Python image.
+   - `python:3.8-` → Uses the lightweight Python image.
    - `python script.py` → Runs your script.
 
 5. **Clean Up:**
@@ -45,7 +45,7 @@ Setup GITHub and Docker account
      ```
    - Remove images:
      ```sh
-     docker rmi python:3.8-slim
+     docker rmi python:3.8-
      ```
 
 ---
@@ -54,7 +54,7 @@ Setup GITHub and Docker account
 ### **4️⃣ Create a Custom Docker Image**
 1. Inside your project folder, create a `Dockerfile`:
    ```dockerfile
-   FROM python:3.8-slim
+   FROM python:3.8-
    WORKDIR /src
    COPY . .
    CMD ["python", "script.py"]
@@ -90,7 +90,7 @@ Setup GITHub and Docker account
    ```
 3. **Write a Dockerfile**:
    ```dockerfile
-   FROM python:3.8-slim
+   FROM python:3.8-
    WORKDIR /app
    COPY . .
    RUN pip install -r requirements.txt
