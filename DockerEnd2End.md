@@ -2,14 +2,7 @@
 
 
 # **🔹  1: Setting Up**
-### **1️⃣ Download Course Resources**
-1. Visit the **GitHub repository** 
-2. Click the green **"Code"** button → **"Download ZIP"**.
-3. Extract the ZIP file on your computer.
-4. Inside, you'll find:
-   - `starter-projects/` (Contains starter code).
-   - `exercises/` (Practice exercises).
-
+Setup GITHub and Docker account
 ---
 
 # **🔹  2: Installing Docker**
